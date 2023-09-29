@@ -1,0 +1,87 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .dashboard_mainsec #sidebar {
+        margin-left: -300px;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper #sidebar {
+        margin-left: -300px;
+    }
+
+    .dashboard_mainsec .content_section .cardbox {
+        margin-bottom: 20px;
+    }
+
+    #wrapper.toggled #sidebar {
+        margin-left: 0rem;
+    }
+
+    .dashboard_mainsec .content_section .gamestab_saction .tab_table_main .table tr td .coutrylogos {
+        width: 80px;
+    }
+
+    .dashboard_mainsec .content_section .gamestab_saction .tab_table_main .table tr td:first-child {
+        display: flex;
+    }
+
+    .navuser_profile {
+        padding-left: 20px;
+    }
+
+    .main_section .header_section .navbar-nav .nav-link {
+        padding: 10px 20px;
+    }
+
+}
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 767px) {
+    .dashboard_mainsec #sidebar {
+        margin-left: -300px;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper #sidebar {
+        margin-left: -300px;
+    }
+
+    #wrapper.toggled #sidebar {
+        margin-left: 0rem;
+    }
+
+    .dashboard_mainsec .content_section .cardbox {
+        margin-bottom: 20px;
+    }
+
+    .dashboard_mainsec .content_section .gamestab_saction .tab_table_main .table tr td .coutrylogos {
+        width: 80px;
+    }
+
+    .dashboard_mainsec .content_section .gamestab_saction .tab_table_main .table tr td:first-child {
+        display: flex;
+    }
+
+    .navuser_profile {
+        padding-left: 20px;
+    }
+
+    .main_section .header_section .navbar-nav .nav-link {
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 992px) {}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
+
+
+
+@media only screen and (min-width : 1025px) {}

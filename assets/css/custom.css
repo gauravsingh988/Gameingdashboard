@@ -1,0 +1,412 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkbgblue: #060C1F;
+    --darkblack: #141C33;
+    --red: #F3486A;
+    --text-white: #fff;
+    --lightred: #f3486a6e;
+    --hoveranimation: all 0.5s
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    overflow-x: hidden !important;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+input,
+input:focus,
+input:hover,
+button,
+button:hover,
+button:focus {
+    outline: none;
+
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+section {
+    overflow: hidden;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+}
+
+
+
+ul li {
+    list-style: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+body {
+    background-color: var(--darkbgblue);
+}
+
+.main_section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.main_section .header_section .navbar {
+    background-color: var(--darkblack);
+    padding: 20px 10px;
+}
+
+.main_section .header_section .navbar .navbar-brand {
+    color: var(--text-white);
+    font-size: 30px;
+}
+
+.main_section .header_section .navbar .navbar-brand span {
+    color: var(--red);
+}
+
+.main_section .header_section .navbar-nav .nav-link:hover,
+.main_section .header_section .navbar-nav .nav-link.active {
+    color: var(--red);
+}
+
+.main_section .header_section .navbar-nav .navser_in {
+    padding: 0;
+    padding-left: 20px;
+}
+
+.main_section .header_section .navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: var(--text-white);
+}
+
+.main_section .header_section .navbar-nav .nav_time {
+    padding: 0.5rem 1rem;
+    display: block;
+    color: var(--text-white);
+}
+
+.navuser_profile {
+    display: flex;
+    gap: 5px;
+    align-content: center;
+}
+
+.navuser_profile .user_amout {
+    color: var(--text-white);
+    text-align: right;
+    line-height: 20px;
+}
+
+.navuser_profile .user_amout span {
+    display: block;
+    font-size: 12px;
+}
+
+.navuser_profile .userimgbox {
+    background: var(--lightred);
+    border-radius: 50%;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.navser_in .form-group {
+    position: relative;
+}
+
+.navser_in .form-group img {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+}
+
+.navser_in .form-group .form-control {
+    background: transparent;
+    border-radius: 30px;
+    border: 1px solid var(--text-white);
+    color: var(--text-white);
+    padding-left: 40px;
+    max-width: 220px;
+}
+
+.navser_in .form-group .form-control::placeholder {
+    color: var(--text-white);
+}
+
+/* header css end */
+
+/* content css start */
+.dashboard_mainsec {
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+
+}
+
+
+.dashboard_mainsec #sidebar {
+    padding: 10px;
+    background: var(--darkblack);
+    border-radius: 10px;
+    min-height: 100vh;
+    margin-left: 0;
+    min-width: 280px;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+}
+
+#wrapper.toggled #sidebar {
+    margin-left: -300px;
+}
+
+.dashboard_mainsec #sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard_mainsec #sidebar ul li {
+    background: var(--darkbgblue);
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: var(--hoveranimation);
+}
+
+.dashboard_mainsec #sidebar ul li:hover,
+.dashboard_mainsec #sidebar ul li.active {
+    background-color: var(--red);
+}
+
+.dashboard_mainsec #sidebar ul li a {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    color: var(--text-white);
+}
+
+.dashboard_mainsec .content_section {
+    width: 100%;
+    height: 100vh;
+}
+
+.dashboard_mainsec .content_section .content_heading {
+    padding: 20px;
+    background: var(--darkblack);
+    border-radius: 10px;
+}
+
+.dashboard_mainsec .content_section .content_heading img {
+    cursor: pointer;
+}
+
+.dashboard_mainsec .content_section .content_heading h5 {
+    color: var(--text-white);
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.nav-tabs {
+    border: none;
+    background: var(--darkblack);
+    border-radius: 10px 10px 0 0;
+}
+
+.dashboard_mainsec .content_section .gamestab_saction .nav-tabs .nav-item .nav-link {
+    padding: 15px 40px;
+    color: var(--text-white);
+    border: none;
+    border-right: 1px solid var(--text-white);
+    border-radius: 0;
+}
+
+.dashboard_mainsec .content_section .gamestab_saction .nav-tabs .nav-item .nav-link.active {
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid var(--text-white);
+    color: var(--red);
+}
+
+.dashboard_mainsec .content_section .gamestab_saction .tab_table_main .table tr td {
+    padding: 10px;
+}
+
+.dashboard_mainsec .content_section .gamestab_saction .tab_table_main .table tr td .tabheadiocn {
+    padding-right: 15px;
+}
+
+.dashboard_mainsec .content_section .gamestab_saction .tab_table_main .table tr td .coutrylogos {
+    display: inline-block;
+    margin-right: 12px;
+    position: relative;
+}
+
+.dashboard_mainsec .content_section .gamestab_saction .tab_table_main .table tr td .coutrylogos .indialogo {
+    margin-left: -24px;
+}
+
+.dashboard_mainsec .content_section .gamestab_saction .tab_table_main .table>tbody>tr:nth-of-type(odd) {
+    background-color: var(--darkblack);
+}
+
+.dashboard_mainsec .content_section .gamestab_saction .tab_table_main .table>tbody>tr>td:not(:first-child) {
+    width: 100px;
+    text-align: center;
+}
+
+.dashboard_mainsec .content_section .cardbox {
+    padding: 20px;
+    background-color: var(--darkblack);
+    border-radius: 10px;
+}
+
+.game_card_box .gameboxtabs .nav-tabs {
+    gap: 10px;
+}
+
+.game_card_box .gameboxtabs .nav-tabs .nav-link {
+    border: none;
+    padding: 15px 40px;
+    color: var(--text-white);
+    background-color: var(--darkbgblue);
+}
+
+.game_card_box .gameboxtabs .nav-tabs .nav-item.show .nav-link,
+.game_card_box .gameboxtabs .nav-tabs .nav-link.active {
+    background-color: var(--red);
+    color: var(--text-white);
+    border-radius: 5px;
+}
+
+.game_card_box .gameboxtabs .game_img_cardbox {
+    background: var(--darkbgblue);
+    text-align: center;
+    border-radius: 5px;
+    /* margin-top: 15px; */
+    padding: 10px;
+    cursor: pointer;
+    color: var(--text-white);
+    transition: var(--hoveranimation);
+}
+
+.game_card_box .gameboxtabs .game_img_cardbox img {
+    height: 100%;
+    width: 100%;
+}
+
+.game_card_box .gameboxtabs .game_img_cardbox p {
+    margin: 0;
+    padding-top: 8px;
+
+}
+
+.game_card_box .gameboxtabs .game_img_cardbox:hover {
+    color: var(--red);
+}
+
+.sporcollpse .accordion-item {
+    background-color: transparent;
+}
+
+.sporcollpse .accordion-button::after {
+    background-image: url(../images/arrow_down.svg);
+}
+
+.sporcollpse .accordion-button:not(.collapsed)::after {
+    background-image: url(../images/arrow_up.svg);
+}
+
+.sporcollpse .accordion-item .accordion-button {
+    background-color: var(--text-white);
+    color: var(--red);
+    font-weight: 600;
+}
+
+.sporcollpse .accordion-header {
+    margin-bottom: 10px;
+}
+
+.sporcollpse .accordion-body {
+    padding: 1rem 0rem;
+    background-color: var(--darkbgblue);
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.sporcollpse .accordion-body .acodiacarbody {
+    padding: 0 10px;
+}
+
+.sporcollpse .accordion-body .acodiacarbody .acordinlist {
+    color: #fff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.acodiacarbody .accordion-item .accordion-button {
+    background: transparent;
+    color: #fff;
+    margin: 0;
+    border-bottom: 1px solid;
+    padding: 1rem 0;
+    font-weight: normal;
+
+}
+
+
+.acodiacarbody .accordion-button:not(.collapsed)::after {
+    background-image: url(../images/plus_icon.svg);
+}
+
+.acodiacarbody .accordion-button::after {
+    background-image: url(../images/minus_icon.svg);
+}
+
+.acodiacarbody .accordion-header {
+    margin-bottom: 0px;
+}
+
+.acodiacarbody .accordion-body {
+    color: var(--text-white);
+    margin: 0;
+}
